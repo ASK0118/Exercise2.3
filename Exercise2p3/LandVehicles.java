@@ -36,18 +36,21 @@ public class LandVehicles {
 		
 		System.out.print("Enter your payment: RM ");
 		int p = input.nextInt();
+		
 		int b = p - totprice;
+		
 		System.out.println("Balance: RM "+ b);
 	}
 	
 	void calcdepreciate(int p, int y) {
 		
-		
 		System.out.print("Enter the years you use the vehicle: ");
 		int yuse = input.nextInt();
 		System.out.println("Life expectancy: "+ y + " years");
+		
 		int depValue= p/y*yuse;
 		int aftDep= p-depValue;
+		
 		System.out.println("Depreciation value: RM "+ depValue );
 		System.out.println("Value of vehicle after depreciate: " + "RM " + aftDep);
 	}
